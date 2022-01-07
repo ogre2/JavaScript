@@ -1,0 +1,110 @@
+@charset "utf-8";
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	vertical-align: baseline;
+	background: transparent;
+	font-size: 100%;
+	-webkit-transition: all 0.25s ease-in-out;
+	transition: all 0.25s ease-in-out;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-family: 'Open Sans', 'Robot', sans-serif;
+	background: white;
+}
+ol,
+ul {
+	list-style-type: none;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+ol,
+ul > li {
+	display: inline;
+}
+.app-wrapper {
+	height: 280px;
+	width: 500px;
+	/*border: 1px solid blue;*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.app-wrapper .app {
+	height: 100%;
+	width: 100%;
+	display: flex-column;
+	justify-content: space-around;
+	align-items: space-around;
+}
+.app-wrapper .app .display,
+.app-wrapper .app .controls {
+	display: flex;
+	width: 100%;
+}
+.app-wrapper .app .display {
+	height: 50%;
+	align-items: center;
+	justify-content: center;
+}
+.app-wrapper .app .display .number {
+	font-size: 6rem;
+	font-weight: 300;
+}
+.animate {
+	animation: pulse 1s;
+}
+.app-wrapper .app .controls {
+	height: 50%;
+	align-items: center;
+	justify-content: space-around;
+	/*border: 1px solid blue;*/
+}
+.app-wrapper .app .controls .ctrl-button {
+	margin: 0 20px;
+}
+.app-wrapper .app .controls .ctrl-button .button {
+	padding: 15px 18px;
+	font-weight: 600;
+	color: #FFFFFF;
+	cursor: pointer;
+	/*border: 1px solid;*/
+}
+.app-wrapper .app .controls .ctrl-button .button.decrease {
+	background: #FF0000;
+}
+.app-wrapper .app .controls .ctrl-button .button.reset {
+	background: #2378D1;
+}
+.app-wrapper .app .controls .ctrl-button .button.increase {
+	background: #7DDE92;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
